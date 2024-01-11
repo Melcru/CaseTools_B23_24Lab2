@@ -5,33 +5,15 @@ class Simple
     String name;
     int roll_no;
     double S1,S2,S3,S4,total,percent;
-    void get_Info()
-    {
-        Scanner obj = new Scanner(System.in);
-        System.out.print("Enter Name: "); 
-        name=obj.next();
+    // program to convert celsius to fahrenheit
+// ask the celsius value to the user 
+const celsius = prompt("Enter a celsius value: ");
 
-        System.out.print("Enter Roll Number: "); 
-        roll_no=obj.nextInt();
+// calculate fahrenheit
+const fahrenheit = (celsius * 1.8) + 32
 
-        System.out.print("Enter English: "); 
-        S1=obj.nextDouble();
-        
-        System.out.print("Enter Maths: "); 
-        S2=obj.nextDouble();
-
-        System.out.print("Enter Science: "); 
-        S3=obj.nextDouble();
-
-        System.out.print("Enter Hindi: "); 
-        S4=obj.nextDouble();
-    }
-
-    void Cal()
-    {
-        total = S1+S2+S3+S4;
-        percent=(total/400)*100;
-    }
+// display the result
+console.log(`${celsius} degree celsius is equal to ${fahrenheit} degree fahrenheit.`);
 
     void display()
     {
